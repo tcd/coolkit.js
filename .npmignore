@@ -1,2 +1,5 @@
-node_modules
+.editorconfig
+.eslintrc.js
+.git
 .gitignore
+node_modules
