@@ -12,6 +12,9 @@
     "scripts": {
         "build": "tsc"
     },
+    "files": [
+        "src/*"
+    ],
     "devDependencies": {
         "@types/node": "^17.0.23",
         "@typescript-eslint/eslint-plugin": "^5.16.0",
