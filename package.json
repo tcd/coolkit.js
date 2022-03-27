@@ -1,0 +1,16 @@
+{
+    "name": "coolkit-js",
+    "version": "0.1.0",
+    "description": "Code I frequently reuse.",
+    "author": "Clay Dunston <dunstontc@gmail.com>",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/tcd/coolkit.js.git"
+    },
+    "homepage": "https://github.com/tcd/coolkit.js",
+    "scripts": {},
+    "devDependencies": {
+        "@types/node": "^17.0.23"
+    }
+}
