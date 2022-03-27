@@ -9,7 +9,9 @@
         "url": "https://github.com/tcd/coolkit.js.git"
     },
     "homepage": "https://github.com/tcd/coolkit.js",
-    "scripts": {},
+    "scripts": {
+        "build": "tsc"
+    },
     "devDependencies": {
         "@types/node": "^17.0.23",
         "@typescript-eslint/eslint-plugin": "^5.16.0",

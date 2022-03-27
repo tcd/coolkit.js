@@ -9,19 +9,18 @@
         "removeComments": true,
         "sourceMap": false,
         "lib": ["dom", "dom.iterable", "esnext"],
-        "baseUrl": "./",
-        "paths": {
-            "@src/*": ["./src/*"],
-        },
-        // "types": [ "node" ],
-        // "outDir": "dist"
+        "types": [ "node" ],
+        // "baseUrl": "./",
+        // "paths": {
+        //     "@src/*": ["./src/*"],
+        // },
+        "outDir": "dist"
     },
     "include": [
         "src/**/*",
     ],
     "exclude": [
         "test/**/*",
-        "bin/**/*",
         "dist/**/*",
     ]
 }
