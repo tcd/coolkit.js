@@ -13,20 +13,17 @@
         "utilities",
         "util"
     ],
-    "main": "./dist/index.js",
-    "module": "./dist/index.js",
-    "types": "./dist/index.d.ts",
+    "main": "./dist/cjs/index.js",
+    "module": "./dist/esm/index.js",
+    "types": "./dist/esm/index.d.ts",
     "files": [
         "./dist"
     ],
     "scripts": {
-        "build": "npm run build:clean && npm run build:compile",
+        "build": "npm run build:clean && npm run build:esm && npm run build:cjs",
         "build:clean": "cross-env rimraf ./dist",
-        "build:compile": "cross-env tsc"
-    },
-    "dependencies": {
-        "chalk": "^5.0.1",
-        "mkdirp": "^1.0.4"
+        "build:esm": "cross-env tsc --project ./tsconfig.esm.json",
+        "build:cjs": "cross-env tsc --project ./tsconfig.cjs.json"
     },
     "devDependencies": {
         "@types/node": "^17.0.23",
@@ -37,6 +34,6 @@
         "eslint-config-dunstontc": "^0.1.0",
         "eslint-plugin-jsdoc": "^39.3.6",
         "rimraf": "^3.0.2",
-        "typescript": "^4.6.3"
+        "typescript": "^4.8.3"
     }
 }
