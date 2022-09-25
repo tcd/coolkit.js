@@ -2,4 +2,9 @@
 .eslintrc.js
 .git
 .gitignore
+tsconfig.json
+tsconfig.*.json
+
+ignore
 node_modules
+src
