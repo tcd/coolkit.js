@@ -1,7 +1,7 @@
 {
     "private": false,
     "name": "coolkit-js",
-    "version": "1.0.0-rc.1",
+    "version": "1.0.0-rc.2",
     "description": "Code I frequently reuse.",
     "author": "Clay Dunston <dunstontc@gmail.com>",
     "license": "MIT",
