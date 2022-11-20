@@ -1,6 +1,7 @@
 .editorconfig
 .eslintrc.js
 .git
+.env
 .gitignore
 tsconfig.json
 tsconfig.*.json
