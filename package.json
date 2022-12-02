@@ -1,7 +1,7 @@
 {
     "private": false,
     "name": "coolkit-js",
-    "version": "1.0.0-rc.3",
+    "version": "1.0.0-rc.4",
     "description": "Code I frequently reuse.",
     "author": "Clay Dunston <dunstontc@gmail.com>",
     "license": "MIT",
@@ -28,6 +28,7 @@
         "publish:latest": "npm publish --tag latest"
     },
     "dependencies": {
+        "axios": "^1.2.0",
         "colorette": "^2.0.19",
         "mkdirp": "^1.0.4"
     },
