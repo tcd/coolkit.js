@@ -1,10 +1,10 @@
-import { readFileSync } from "fs"
+import { readFile as _readFile } from "fs/promises"
 import colorette from "colorette"
 const { red } = colorette
 
-const readFile = (path: string): string | null => {
+const readFileAsync = async (path: string): Promise<string | null> => {
     try {
-        const result = readFileSync(path).toString()
+        const result = (await _readFile(path)).toString()
         return result
     } catch (error) {
         if (error.code == "ENOENT") {
@@ -17,4 +17,4 @@ const readFile = (path: string): string | null => {
     }
 }
 
-export default readFile
+export default readFileAsync

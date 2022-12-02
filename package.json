@@ -1,7 +1,7 @@
 {
     "private": false,
     "name": "coolkit-js",
-    "version": "1.0.0-rc.2",
+    "version": "1.0.0-rc.3",
     "description": "Code I frequently reuse.",
     "author": "Clay Dunston <dunstontc@gmail.com>",
     "license": "MIT",
@@ -27,7 +27,12 @@
         "publish:next": "npm publish --tag next",
         "publish:latest": "npm publish --tag latest"
     },
+    "dependencies": {
+        "colorette": "^2.0.19",
+        "mkdirp": "^1.0.4"
+    },
     "devDependencies": {
+        "@types/mkdirp": "^1.0.2",
         "@types/node": "^17.0.23",
         "@typescript-eslint/eslint-plugin": "^5.16.0",
         "@typescript-eslint/parser": "^5.16.0",

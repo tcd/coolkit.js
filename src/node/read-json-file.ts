@@ -1,8 +1,8 @@
 import { readFileSync } from "fs"
-import chalk from "chalk"
-const { red } = chalk
+import colorette from "colorette"
+const { red } = colorette
 
-export const readJsonFile = <T = any>(path: string): T => {
+const readJsonFile = <T = any>(path: string): T | null => {
     try {
         const result = JSON.parse(readFileSync(path).toString())
         return result
@@ -13,5 +13,8 @@ export const readJsonFile = <T = any>(path: string): T => {
             console.log(red(`unable to read JSON from path '${path}'`))
             console.log(red(error.message))
         }
+        return null
     }
 }
+
+export default readJsonFile

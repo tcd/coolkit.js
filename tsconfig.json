@@ -1,5 +1,6 @@
 {
     "compilerOptions": {
+        "moduleResolution": "node",
         "target": "ES6",
         "esModuleInterop": true,
         "downlevelIteration": true,
@@ -7,7 +8,10 @@
         "sourceMap": true,
         "declaration": true,
         "declarationMap": true,
-        // "moduleResolution": "node",
+        "strict": false,
+        "lib": [
+            "ES2021"
+        ],
         "types": [
             "node",
         ],
