@@ -6,7 +6,9 @@ import colorette from "colorette"
 const { red, blue } = colorette
 
 /**
- * Write `data` out to a file at the given `path`.
+ * Write `data` out to a file at the given `path` and log it.
+ *
+ * Stringifies data.
  *
  * Makes parent folders for the path if they don't already exist.
  *
