@@ -2,8 +2,7 @@ import { writeFileSync } from "fs"
 import { dirname } from "path"
 
 import mkdirp from "mkdirp"
-import colorette from "colorette"
-const { red, blue } = colorette
+import { red, blue } from "colorette"
 
 /**
  * Write `data` out to a file at the given `path` and log it.

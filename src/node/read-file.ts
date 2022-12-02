@@ -1,6 +1,5 @@
 import { readFileSync } from "fs"
-import colorette from "colorette"
-const { red } = colorette
+import { red } from "colorette"
 
 const readFile = (path: string): string | null => {
     try {
