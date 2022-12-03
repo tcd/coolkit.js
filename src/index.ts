@@ -1,3 +1,4 @@
+export { default as isAxiosError } from "./is-axios-error"
 export { default as isBlank } from "./is-blank"
 export { default as pickRandom } from "./pick-random"
 export { default as range } from "./range"
