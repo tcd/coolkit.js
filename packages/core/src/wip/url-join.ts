@@ -50,6 +50,7 @@ const normalize = (strArray: string[]): string => {
             component = component.replace(TRAILING_SLASH, "/") // [\/]+$
         }
 
+        // @ts-ignore: next-line
         resultArray.push(component)
     }
 

@@ -19,13 +19,13 @@
             "./node_modules/@types",
         ],
     },
-    "include": [
-        "src/**/*.ts",
-    ],
-    "exclude": [
-        "dist",
-        "test",
-        "src/wip",
-        "src/node",
-    ]
+    // "include": [
+    //     "src/**/*.ts",
+    // ],
+    // "exclude": [
+    //     "dist",
+    //     "test",
+    //     "src/wip",
+    //     "src/node",
+    // ]
 }
