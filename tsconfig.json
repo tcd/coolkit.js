@@ -29,6 +29,7 @@
         "test",
     ],
     "exclude": [
+        "ignore",
         "dist",
         "src/wip",
         "src/node",
