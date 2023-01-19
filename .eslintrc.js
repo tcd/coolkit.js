@@ -7,11 +7,11 @@ module.exports = {
         browser: true,
         es2021: true,
     },
+    // extends: [
+    //     "plugin:@typescript-eslint/recommended",
+    // ],
     parser: "@typescript-eslint/parser",
     parserOptions: {
-        ecmaFeatures: {
-            jsx: true,
-        },
         ecmaVersion: 13,
         sourceType: "module",
     },
@@ -51,7 +51,5 @@ module.exports = {
         "jsdoc/check-indentation":         ["off"], // https://github.com/gajus/eslint-plugin-jsdoc#eslint-plugin-jsdoc-rules-check-indentation
         "jsdoc/newline-after-description": ["warn", "always"], // https://github.com/gajus/eslint-plugin-jsdoc#user-content-eslint-plugin-jsdoc-rules-newline-after-description
         "jsdoc/tag-lines":                 ["warn", "never"], // https://github.com/gajus/eslint-plugin-jsdoc#user-content-eslint-plugin-jsdoc-rules-newline-after-description
-        "jsdoc/sort-tags":                 ["warn", { "tagSequence": JSDOC_TAGS }], // https://github.com/gajus/eslint-plugin-jsdoc#user-content-eslint-plugin-jsdoc-rules-sort-tags
-        "jsdoc/check-tag-names":           ["warn", { "definedTags": JSDOC_TAGS }], // https://github.com/gajus/eslint-plugin-jsdoc#user-content-eslint-plugin-jsdoc-rules-sort-tags
     },
 }

@@ -3,18 +3,7 @@ import { dirname } from "path"
 import mkdirp from "mkdirp"
 import { red, blue } from "colorette"
 
-export type WriteJsonFileOptions = {
-    /**
-     * Pretty format JSON output.
-     * @default true
-     */
-    pretty?: boolean
-    /**
-     * Log out `path` after writing.
-     * @default true
-     */
-    log?: boolean
-}
+import type { WriteJsonFileOptions } from "./types"
 
 /**
  * Write `data` out to a file at the given `path` and log it.
@@ -30,7 +19,7 @@ export type WriteJsonFileOptions = {
 const writeJsonFile = async (path: string, data: any, options: WriteJsonFileOptions = {}): Promise<string | null> => {
     const {
         pretty = true,
-        log = true,
+        log    = true,
     } = options
     try {
         const outData = pretty ? JSON.stringify(data, null, 4) : JSON.stringify(data)
