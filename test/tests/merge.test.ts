@@ -1,6 +1,6 @@
 import { assert } from "chai"
 
-import merge from "../src/wip/merge"
+import { merge } from "@src/wip"
 
 describe("merge", function () {
     it("should not mutate the first argument", function () {

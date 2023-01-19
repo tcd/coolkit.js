@@ -5,6 +5,7 @@
 .gitignore
 tsconfig.json
 tsconfig.*.json
+todo.txt
 
 ignore
 test
