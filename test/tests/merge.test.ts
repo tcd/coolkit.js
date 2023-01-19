@@ -3,6 +3,7 @@ import { assert } from "chai"
 import { merge } from "@src/wip"
 
 describe("merge", function () {
+
     it("should not mutate the first argument", function () {
         const x = {
             a: "A",
@@ -19,4 +20,12 @@ describe("merge", function () {
         merge(x, y)
         assert.equal(x.a, "A")
     })
+
+    it("should overwrite with false", function () {
+        const x = { a: true  }
+        const y = { a: false }
+        const z = merge(x, y)
+        assert.equal(z.a, false)
+    })
+
 })
