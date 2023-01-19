@@ -1,6 +1,6 @@
 import { assert } from "chai"
 
-import { merge } from "@src/wip"
+import { merge } from "@src/core"
 
 describe("merge", function () {
 
