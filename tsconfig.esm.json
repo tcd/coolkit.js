@@ -4,4 +4,7 @@
         "outDir": "./dist/esm",
         "module": "ESNext",
     },
+    "exclude": [
+        "test",
+    ],
 }

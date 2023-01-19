@@ -14,6 +14,7 @@
         ],
         "types": [
             "node",
+            "mocha",
         ],
         "typeRoots": [
             "./node_modules/@types",
@@ -24,7 +25,6 @@
     ],
     "exclude": [
         "dist",
-        "test",
         "src/wip",
         "src/node",
     ]
